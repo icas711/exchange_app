@@ -6,12 +6,12 @@ import 'package:provider/provider.dart';
 
 import '../view_models/asset_view_model.dart';
 
-/// A view that displays a list of assets with their prices.
-/// It uses a [ScrollController] to fetch more assets when the user scrolls to the bottom.
-/// The assets are displayed in a [ListView] with a loading indicator
-///  at the bottom when more assets are being fetched.
-/// The view listens to the [AssetViewModel] for changes in the asset list and loading state.
-/// The assets are displayed with a colored item representing each asset's color.
+/// A view that displays a list of assets with their prices and colors.
+/// 
+/// - Uses a [ScrollController] to fetch more assets when the user scrolls near the bottom.
+/// - Shows a loading indicator at the bottom when more assets are being fetched.
+/// - Listens to the [AssetViewModel] for changes in the asset list and loading state.
+/// - Each asset is displayed with a colored item, symbol, and formatted price.
 class AssetListView extends StatefulWidget {
   const AssetListView({super.key});
 
